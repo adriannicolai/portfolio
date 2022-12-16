@@ -16,6 +16,7 @@
       --violet: #f9004d;
       --light_violet: #fcfc;
       --gray: #191919;
+      --dark: #101010;
     }
     div.hero{
       height: 100vh;
@@ -153,9 +154,10 @@
     font-size: 18px;
     margin-bottom: 45px;
   }
-  section.about div.about_text > button{
+  section.about div.about_text > button,
+  div.box div.card div.card_text > p.button{
     background-color: var(--violet);
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -163,10 +165,64 @@
     border-radius: 30px;
     transition: .4s;
   }
-  section.about div.about_text > button:hover{
+  section.about div.about_text > button:hover,
+  div.box div.card div.card_text > p.button:hover{
     background-color: transparent;
     border: 2px solid var(--violet);
     cursor: pointer;
+  }
+  div.box div.card div.card_text > p.button{
+    text-align: center;
+    padding: 9px 22px !important;
+  }
+  div.box div.card div.card_text > p.button a{
+    color: #fff;
+    text-decoration: none;
+  }
+  div.services{
+    background-color: var(--dark);
+    width: 100%;
+    padding: 100px 0;
+  }
+  div.services div.title > h2{
+    color: #fff;
+    font-size: 75px;
+    width: 1130px;
+    text-align: center;
+  }
+  div.services div.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  div.services div.box div.card{
+    height: 365px;
+    width: 365px;
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  div.services div.box div.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: var(--violet);
+  }
+  div.services div.box div.card > h5{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  div.services div.box div.card div.card_text > p{
+    color: var(--light_violet);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
   }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -206,7 +262,7 @@
         <h2>About Me</h2>
         <h5>Software <span>Engineer</span></h5>
         <p> I am a Software Engineer mainly focusing on Ruby on Rails stack. I can provide clean code
-          with O(N) queries. I also have experience in single page
+          with O(N) codes. I also have experience in single page
         </p>
         <button type="button">Let's Talk</button>
       </div>
@@ -222,6 +278,43 @@
       <div class="card">
         <i class="fa-solid fa-bars"></i>
         <h5>Web Development</h5>
+
+        <div class="card_text">
+          <p>Every website should be built with two primary goals: FIrstly, it needs
+            to work across all devices. Secondly, it needs to be as fast as possible.
+          </p>
+          <p class="button">
+            <a href="#">Read more</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-regular fa-user"></i>
+        <h5>Web Development</h5>
+
+        <div class="card_text">
+          <p>Every website should be built with two primary goals: FIrstly, it needs
+            to work across all devices. Secondly, it needs to be as fast as possible.
+          </p>
+          <p class="button">
+            <a href="#">Read more</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-regular fa-bell"></i>
+        <h5>Web Development</h5>
+
+        <div class="card_text">
+          <p>Every website should be built with two primary goals: FIrstly, it needs
+            to work across all devices. Secondly, it needs to be as fast as possible.
+          </p>
+          <p class="button">
+            <a href="#">Read more</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
